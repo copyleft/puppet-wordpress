@@ -94,8 +94,8 @@ define wordpress::instance (
   $wp_debug             = false,
   $wp_debug_log         = false,
   $wp_debug_display     = false,
-  $wp_config_mode       = '',
-  $wp_mode              = ''
+  $wp_config_mode       = '0640',
+  $wp_mode              = '0644'
 ) {
   wordpress::instance::app { $install_dir:
     install_dir          => $install_dir,
